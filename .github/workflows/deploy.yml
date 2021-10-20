@@ -38,6 +38,6 @@ jobs:
         
     - name: Add Secret
       run: |
-        python f = open("secrets.py", "w")
-        python f.write("TOKEN =" ${{ secrets.TOKEN }})
-        python f.close()
+        python -m f = open("secrets.py", "w")
+        python -m f.write("TOKEN =" ${{ secrets.TOKEN }})
+        python -m f.close()
